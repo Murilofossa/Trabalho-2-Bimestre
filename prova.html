@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Prova 2 Bi" content="width=device-width, initial-scale=1.0">
+    <title>Prova 2 Bi</title>
+
+      <script type="'text/javascript"></script>
+    <script src="prova.js"></script>
+    <script defer src="prova.js"></script>
+
+     <link rel="stylesheet" href="prova.css"> 
+
+</head>
+<body>
+   <nav class="links"> 
+     <a href="prova.html">Menu</a> 
+     <a href="perfil.html">perfil</a> 
+     <a href="brincadeiras.html">Utilidades</a> 
+</nav> 
+
+<h2>Digite um número:</h2>
+<input type="botão" id="caixa1" /><br>
+<button onclick="BotãoParImpar()">Seu número é</button>
+
+
+<h2>Aumente ou diminua o número abaixo</h2>
+ <div id="valor">0</div>
+
+  <button onclick="diminuir()">- Diminuir</button>
+  <button onclick="aumentar()">+ Aumentar</button>
+
+   <h1>Adivinhe o número de 1 a 10!</h1>
+
+  <input type="number" id="palpite" placeholder="Digite seu palpite" min="1" max="10">
+  <button onclick="verificarPalpite()">Enviar</button>
+  <button onclick="reiniciarJogo()">Novo Número</button>
+
+  <div id="mensagem"></div>
+
+   <h1>Mostrar a média de nota</h1>
+
+  <input type="number" id="nota1" placeholder="Nota 1" min="0" max="10">
+  <input type="number" id="nota2" placeholder="Nota 2" min="0" max="10">
+  <input type="number" id="nota3" placeholder="Nota 3" min="0" max="10">
+  <br>
+  <button onclick="calcularMedia()">Calcular Média</button>
+
+  <div id="resultado1"></div>
+
+   <p>Troque para o darkmode ou lightmode.</p>
+
+  <button onclick="alternarModo()">🌙 Alternar Modo</button>
+
+  <h2>Quiz: Qual é a capital do Brasil?</h2>
+
+  <form id="quizForm">
+    <div class="pergunta">
+      <label><input type="radio" name="resposta" value="a"> São Paulo</label><br>
+      <label><input type="radio" name="resposta" value="b"> Rio de Janeiro</label><br>
+      <label><input type="radio" name="resposta" value="c"> Brasília</label><br>
+      <label><input type="radio" name="resposta" value="d"> Salvador</label>
+    </div>
+
+    <button type="button" onclick="verificarResposta()">Verificar</button>
+  </form>
+
+  <div id="resultado2"></div>
+
+   <div class="opcoes">
+    <label><input type="radio" name="cor" value="lightblue" onchange="mudarCor()"> Azul claro</label>
+    <label><input type="radio" name="cor" value="lightgreen" onchange="mudarCor()"> Verde claro</label>
+    <label><input type="radio" name="cor" value="lightyellow" onchange="mudarCor()"> Amarelo claro</label>
+    <label><input type="radio" name="cor" value="lightgray" onchange="mudarCor()"> Cinza claro</label>
+  </div>
+
+   <h2>Clique no botão para mudar sua cor!</h2>
+  <button id="btnCor">Mudar Cor</button>
+
+     <h2>Você clicou <span id="contador">0</span> vezes no botão.</h2>
+
+  <button onclick="btnContador()">Clique aqui</button>
+
+
+   <h2>Passe o mouse sobre o texto:</h2>
+
+  <p id="textoHover">Passe o mouse aqui para ver a mágica!</p>
+
+     <h2>Digite algo no campo abaixo:</h2>
+  <input type="text" id="campoTexto" placeholder="Digite aqui...">
+  <p>Última tecla digitada: <span id="ultimaTecla">nenhuma</span></p>
+
+   <p id="paragrafo">Dê dois cliques neste parágrafo para fazê-lo desaparecer.</p>
+
+    <h2>Marque a caixa para habilitar o botão:</h2>
+
+  <label>
+    <input type="checkbox" id="meuCheckbox"> Eu concordo com os termos
+  </label>
+  <br><br>
+  
+  <button onclick= "meuBotao()" disabled>Continuar</button>
+
+
+</body>
+</html>
