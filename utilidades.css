@@ -1,0 +1,20 @@
+nav{ 
+    display: flex; 
+    justify-content: space-around; 
+    background-color: rgba(187, 1, 1, 0.781); 
+    padding: 40px 10px; 
+} 
+a{ 
+    color: rgb(255, 255, 255); 
+    text-decoration: none;
+}
+  body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 50px;
+    }
+    input, select, button {
+      margin: 10px;
+      padding: 8px;
+      font-size: 16px;
+    }
