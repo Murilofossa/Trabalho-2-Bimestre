@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brincadeiras</title>
+     <link rel="stylesheet" href="brincadeiras.css"> 
+     <script defer src="brincadeiras.js"></script>
+</head>
+<body>
+    
+  <nav class="links"> 
+     <a href="prova.html">Menu</a> 
+     <a href="perfil.html">perfil</a> 
+     <a href="brincadeiras.html">Utilidades</a> 
+</nav> 
+
+<h2>taboada de um número</h2>
+
+  <input type="number" id="numero" placeholder="Digite um número inteiro">
+  <button onclick="mostrarTabuada()">Mostrar Tabuada</button>
+
+  <div id="resultado"></div>
+
+<p>Digite seu peso em KG:</p>                  
+ <input type="number" id="peso" placeholder="Peso (kg)" step="0.1" min="0">
+
+<p>Digite sua altura em M:</p>
+ <input type="number" id="altura" placeholder="Altura (m)" step="0.01" min="0">
+
+ <br>
+  <button onclick="calcularIMC()">Calcular IMC</button>
+
+  <div id="resultado5"></div>
+
+ <h1>Calculadora Simples</h1>
+
+  <input type="number" id="num1" placeholder="Primeiro número">
+   <select id="operacao">
+    <option value="soma">+</option>
+    <option value="subtracao">-</option>
+    <option value="multiplicacao">*</option>
+    <option value="divisao">/</option>
+  </select>
+  
+  <input type="number" id="num2" placeholder="Segundo número">
+  
+ 
+  
+  <button onclick="calcular()">Calcular</button>
+
+  <h2>Resultado: <span id="resultado4">--</span></h2>
+
+   <h2>Conversor de Temperatura</h2>
+
+  <input type="number" id="tempInput" placeholder="Digite o valor">
+  <br>
+
+  <button onclick="converterParaF()">Converter para °F</button>
+  <button onclick="converterParaC()">Converter para °C</button>
+
+  <p id="resultado3"></p>
+
+   <div id="cronometro">00:00:00</div>
+
+  <button id="iniciar" onclick="iniciar()">Iniciar</button>
+  <button id="pausar" onclick="pausar()">Pausar</button>
+  <button id="zerar" onclick="zerar()">Zerar</button>
+
+  <h1>Exercícios de Matemática</h1>
+
+  <form id="quizForm">
+
+    <div class="question">
+      <p>1. Quanto é 5 + 3?</p>
+      <label><input type="radio" name="q1" value="a"> 6</label><br>
+      <label><input type="radio" name="q1" value="b"> 7</label><br>
+      <label><input type="radio" name="q1" value="c"> 8</label><br>
+      <label><input type="radio" name="q1" value="d"> 9</label>
+    </div>
+
+    <div class="question">
+      <p>2. Quanto é 12 ÷ 4?</p>
+      <label><input type="radio" name="q2" value="a"> 2</label><br>
+      <label><input type="radio" name="q2" value="b"> 3</label><br>
+      <label><input type="radio" name="q2" value="c"> 4</label><br>
+      <label><input type="radio" name="q2" value="d"> 5</label>
+    </div>
+
+    <div class="question">
+      <p>3. Qual o valor de 7 × 6?</p>
+      <label><input type="radio" name="q3" value="a"> 42</label><br>
+      <label><input type="radio" name="q3" value="b"> 36</label><br>
+      <label><input type="radio" name="q3" value="c"> 48</label><br>
+      <label><input type="radio" name="q3" value="d"> 40</label>
+    </div>
+
+    <button type="button" onclick="verificarRespostas()">Verificar Respostas</button>
+    <div id="resultado2"></div>
+  </form>
+
+
+</body>
+</html>
